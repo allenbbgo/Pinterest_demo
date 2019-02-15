@@ -70,3 +70,5 @@ gem 'jquery-rails'
 gem 'simple_form'
 
 gem 'devise', '~> 4.2'
+
+gem 'paperclip', '~> 5.1'
