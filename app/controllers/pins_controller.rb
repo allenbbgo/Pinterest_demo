@@ -9,7 +9,7 @@ class PinsController < ApplicationController
     end
     
     def new
-      @pin = Pin.current_user.pins.build
+      @pin = current_user.pins.build
       
     end
     
@@ -41,7 +41,10 @@ class PinsController < ApplicationController
     end
 
 
-
+    def upvote
+      @pin.upvote_by current_user
+      redirect_to :back
+    end
 
 
     private
